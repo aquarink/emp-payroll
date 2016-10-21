@@ -1,0 +1,116 @@
+<style>
+    .agenda {  }
+
+    /* Dates */
+    .agenda .agenda-date { width: 170px; }
+    .agenda .agenda-date .dayofmonth {
+        width: 40px;
+        font-size: 36px;
+        line-height: 36px;
+        float: left;
+        text-align: right;
+        margin-right: 10px;
+    }
+    .agenda .agenda-date .shortdate {
+        font-size: 0.75em;
+    }
+
+
+    /* Times */
+    .agenda .agenda-time { width: 140px; }
+
+
+    /* Events */
+    .agenda .agenda-events {  }
+    .agenda .agenda-events .agenda-event {  }
+
+    @media (max-width: 767px) {
+
+    }
+</style>
+<nav id="navs" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="">Employee Self Service</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#/karyawan"><span class="glyphicon glyphicon-user"></span> Profil</a></li>
+                <li class="dropdown active">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-calendar"></span> Cuti<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#/reqcuti"><span class="glyphicon glyphicon-bookmark"></span> Permohonan Cuti</a></li>
+                        <li><a href="#/hiscuti"><span class="glyphicon glyphicon-briefcase"></span> Histori Cuti</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#/slip"><span class="glyphicon glyphicon-envelope"></span> Slip Gaji</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-cog"></span> Akun<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#/reqpass"><span class="glyphicon glyphicon-edit"></span> Ubah Password</a></li>
+                        <li><a href="#/out"><span class="glyphicon glyphicon-log-out"></span> Keluar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container" style="padding-top: 70px;">
+    <div class="row">
+
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="text-align:center"><b>HISTORI CUTI</b></div>
+                <div class="panel-body">
+                    <div class="agenda">
+                        <div class="table-responsive">
+                            <table class="table table-condensed">
+                                <thead>
+                                <tr>
+                                    <th>Mulai Cuti</th>
+                                    <th>Selesai Cuti</th>
+                                    <th>Alasan Cuti</th>
+                                    <th>Cuti (hari)</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="agenda-date" class="active" rowspan="1">
+                                        <div class="dayofmonth">26</div>
+                                        <div class="shortdate text-muted">July, 2014</div>
+                                    </td>
+                                    <td class="agenda-date" class="active" rowspan="1">
+                                        <div class="dayofmonth">26</div>
+                                        <div class="shortdate text-muted">July, 2014</div>
+                                    </td>
+
+                                    <td class="agenda-events"><div class="agenda-event">Fishing</div></td>
+                                    <td class="agenda-date" class="active" rowspan="1">
+                                        <div class="dayofmonth">26</div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+
+    </div>
+</div>

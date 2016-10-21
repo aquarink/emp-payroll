@@ -1,34 +1,26 @@
-<?php
+<!DOCTYPE html>
+<html ng-app="pebApp">
+<head>
+    <meta charset="UTF-8">
+    <title ng-bind="title + ' - Arya App'">Default</title>
+    <script type="text/javascript" src="Modul/Angularjs/angular.js"></script>
+    <script type="text/javascript" src="Modul/Angularjs/angular-route.js"></script>
+    <script type="text/javascript" src="Modul/Angularjs/angular-resource.js"></script>
+    <script type="text/javascript" src="Modul/Angularjs/angular-app.js"></script>
+    <link type="text/css" rel="stylesheet" href="Modul/Bootstrap/css/bootstrap.css" media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-include_once 'Controller/Route.php';
-$route = new Route();
+    <script type="text/javascript" src="Modul/Angularjs/JsController/JsLoginCtrl.js"></script>
+    <script type="text/javascript" src="Modul/Angularjs/JsController/JsCutiCtrl.js"></script>
 
-if(isset($_GET['p'])) {
+    <script>var selfUrl = '<?php echo $_SERVER['SERVER_ADDR']; ?>';</script>
+</head>
+<body style="background-color: #c7c7c7">
 
-    if(empty($_GET['p'])) {
+<div ng-view></div>
 
-        if(empty($_GET['f'])) {
-            $function = $route->FuncRoute('Index', 'Index');
-        } else {
-            $function = ucfirst($_GET['f']);
-            $function = $route->FuncRoute('Index', $function);
-        }
-    } else {
-        $ctrlClass = $_GET['p'];
-        if(empty($_GET['f'])) {
-            $function = 'Index';
-            $function = $route->FuncRoute($ctrlClass, $function);
-        } else {
-            $function = ucfirst($_GET['f']);
-            $function = $route->FuncRoute($ctrlClass, $function);
-        }
-    }
-} else {
+<script type="text/javascript" src="Modul/Bootstrap/js/jquery.min.js"></script>
+<script type="text/javascript" src="Modul/Bootstrap/js/bootstrap.min.js"></script>
 
-    if(isset($_GET['f'])) {
-        $function = ucfirst($_GET['f']);
-        $function = $route->FuncRoute('Index', $function);
-    } else {
-        $function = $route->FuncRoute('Index', 'Index');
-    }
-}
+</body>
+</html>
