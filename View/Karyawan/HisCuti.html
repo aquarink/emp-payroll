@@ -68,7 +68,7 @@
         </div>
     </div>
 </nav>
-<div class="container" style="padding-top: 70px;">
+<div class="container" style="padding-top: 70px;" data-ng-controller="cutiController" data-ng-init="historiCuti()">
     <div class="row">
 
         <div class="col-md-2"></div>
@@ -88,19 +88,24 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
+                                <tr ng-repeat="cuti in dataHisCuti">
                                     <td class="agenda-date" class="active" rowspan="1">
-                                        <div class="dayofmonth">26</div>
-                                        <div class="shortdate text-muted">July, 2014</div>
+                                        <div class="dayofmonth">{{cuti.tglM}}</div>
+                                        <div class="shortdate text-muted" ng-if="cuti.blnM == 1">Jan {{cuti.thnM}}</div>
+                                        <div class="shortdate text-muted" ng-if="cuti.blnM == 2">Feb {{cuti.thnM}}</div>
+                                        <div class="shortdate text-muted" ng-if="cuti.blnM == 3">Mar {{cuti.thnM}}</div>
+                                        <div class="shortdate text-muted" ng-if="cuti.blnM == 4">Apr {{cuti.thnM}}</div>
                                     </td>
                                     <td class="agenda-date" class="active" rowspan="1">
-                                        <div class="dayofmonth">26</div>
-                                        <div class="shortdate text-muted">July, 2014</div>
+                                        <div class="dayofmonth">{{cuti.tglS}}</div>
+                                        <div class="shortdate text-muted" ng-if="cuti.blnS == 1">Jan {{cuti.thnS}}</div>
+                                        <div class="shortdate text-muted" ng-if="cuti.blnS == 2">Feb {{cuti.thnS}}</div>
+                                        <div class="shortdate text-muted" ng-if="cuti.blnS == 3">Mar {{cuti.thnS}}</div>
+                                        <div class="shortdate text-muted" ng-if="cuti.blnS == 4">Apr {{cuti.thnS}}</div>
                                     </td>
-
-                                    <td class="agenda-events"><div class="agenda-event">Fishing</div></td>
+                                    <td class="agenda-events"><div class="agenda-event">{{cuti.alasan}}</div></td>
                                     <td class="agenda-date" class="active" rowspan="1">
-                                        <div class="dayofmonth">26</div>
+                                        <div class="">{{cuti.jmlCuti}} <smal>hari</smal></div>
                                     </td>
                                 </tr>
                                 </tbody>

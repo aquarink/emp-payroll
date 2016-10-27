@@ -38,6 +38,31 @@
         </div>
     </div>
 </nav>
-<div class="container" style="padding-top: 70px;">
-    asas
+<div class="container" style="padding-top: 70px;" data-ng-controller="karyawanController" data-ng-init="ambilUser()">
+    <div class="row">
+
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="text-align:center"><b>PROFIL KARYAWAN</b></div>
+                <div class="panel-body">
+                    <label>Nama</label>
+                    <h3>{{datakaryawan.nama_kar}}</h3>
+                    <hr/>
+                    <label>Bekerja Sejak</label>
+                    <h3>{{datakaryawan.cre_kar}}</h3>
+                    <hr/>
+                    <label>Status</label>
+                    <h3 ng-if="datakaryawan.status == 1">Staff</h3>
+                    <h3 ng-if="datakaryawan.status == 2">Supervisor</h3>
+                    <hr/>
+                    <label>Lokasi Kerja</label>
+                    <h3>{{datakaryawan.tgl_lahir}}</h3>
+                    <hr/>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+
+    </div>
 </div>

@@ -17,4 +17,79 @@ pebs.controller('cutiController', function ($scope, $http, $location) {
     $scope.tahun = [
         {val:'2016', tahun:'2016'}, {val:'2017', tahun:'2017'}
     ];
+
+    $scope.ambilCuti = function () {
+        if (selfUrl == '::1') {
+            selfUrl = 'localhost';
+
+        }
+        $http.post('http://' + selfUrl + '/PsProjectEmpPayRoll/system.php?p=cuti&f=hitcuti', {
+            'token': localStorage.getItem('token')
+        }).
+            success(function (data) {
+                $scope.dataHitCuti = data;
+            }).
+            error(function (data, status, header, config) {
+                console.log('D :' + data, 'S :' + status, 'H :' + header, 'C :' + config);
+                //$location.path('/admin');
+                $scope.apply();
+            })
+    }
+
+    $scope.historiCuti = function () {
+        if (selfUrl == '::1') {
+            selfUrl = 'localhost';
+
+        }
+        $http.post('http://' + selfUrl + '/PsProjectEmpPayRoll/system.php?p=cuti&f=historicuti', {
+            'token': localStorage.getItem('token')
+        }).
+            success(function (data) {
+                $scope.dataHisCuti = data;
+            }).
+            error(function (data, status, header, config) {
+                console.log('D :' + data, 'S :' + status, 'H :' + header, 'C :' + config);
+                //$location.path('/admin');
+                $scope.apply();
+            })
+    }
+
+
+    $scope.reqCuti = function () {
+        if (selfUrl == '::1') {
+            selfUrl = 'localhost';
+
+        }
+        $http.post('http://' + selfUrl + '/PsProjectEmpPayRoll/system.php?p=cuti&f=reqcuti', {
+            'MtanggalCutiTxt': $scope.MtanggalCuti,
+            'MbulanCutiTxt': $scope.MbulanCuti,
+            'MtahunCutiTxt': $scope.MtahunCuti,
+            'StanggalCutiTxt': $scope.StanggalCuti,
+            'SbulanCutiTxt': $scope.SbulanCuti,
+            'StahunCutiTxt': $scope.StahunCuti,
+            'lamaCutiTxt': $scope.lamaCuti,
+            'ketCutiTxt': $scope.ketCuti,
+            'token': localStorage.getItem('token')
+        }).
+            success(function (data) {
+                $scope.datacuti = data;
+                console.log(data);
+
+                $scope.MtanggalCuti = null;
+                $scope.MbulanCuti = null;
+                $scope.MtahunCuti = null;
+                $scope.StanggalCuti = null;
+                $scope.SbulanCuti = null;
+                $scope.StahunCuti = null;
+                $scope.lamaCuti = null;
+                $scope.ketCuti = null;
+
+                $scope.ambilCuti();
+            }).
+            error(function (data, status, header, config) {
+                console.log('D :' + data, 'S :' + status, 'H :' + header, 'C :' + config);
+                //$location.path('/admin');
+                $scope.apply();
+            })
+    }
 });

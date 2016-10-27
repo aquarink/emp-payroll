@@ -9,19 +9,19 @@ pebs.config(['$routeProvider',
                 "check": function ($location) {
 
                     var kue = document.cookie;
-                    var kueIndex = kue.split(';')[0];
-                    var kueExplode = kueIndex.split('=');
-                    var kueFinal = [{"session": kueExplode[0], "status": kueExplode[1], "token": kueExplode[2]}];
-                    var kueStatus = kueFinal[0]['status'];
+                    var kueExplode = kue.split('=');
+                    console.log(kueExplode[1]);
 
-                    if(kueStatus == 'true') {
-                        $location.path('/adminhome');
+                    if (localStorage.getItem('token') == null){
+                        console.log('token kosong dan redirect login');
+                    } else {
+                        //$location.path('/karyawan');
                     }
 
                 }
             },
                 templateUrl: 'View/Landing.html',
-                controller: 'loginController',
+                controller: 'karyawanController',
                 title: 'Selamat Datang'
             }).
 
@@ -29,6 +29,7 @@ pebs.config(['$routeProvider',
 
             when('/karyawan', {
                 templateUrl: 'View/Karyawan/Karyawan.html',
+                controller: 'karyawanController',
                 title: 'Profil Karyawan'
             }).
 
@@ -60,19 +61,13 @@ pebs.config(['$routeProvider',
                 title: 'Human Resource'
             }).
 
-            // Redirect Section
-
-            when('', {
-                redirectTo: '/'
-            }).
-
             when('/404', {
                 templateUrl: 'View/404.html',
                 title: 'Halaman Tidak Ditemukan Error 404'
             }).
 
             otherwise({
-                redirectTo: '/404'
+                redirectTo: '/'
             });
     }]);
 
