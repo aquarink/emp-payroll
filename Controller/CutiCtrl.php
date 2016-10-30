@@ -44,6 +44,97 @@ class CutiCtrl {
         }
     }
 
+    public function Setstatuscuti() {
+        $data = file_get_contents('php://input');
+        $datanya = json_decode($data);
+
+        if(empty($datanya)) {
+            echo '{"err" : "true", "msg" : "Field Kosong"}';
+        } else {
+            include_once 'Model/KaryawanModel.php';
+            $karyawan = new KaryawanModel();
+
+            $token = $datanya->token;
+
+            $cekToken = $karyawan->cekDataToken($token);
+            if($cekToken > 0) {
+
+                $dataToken = $karyawan->getDataToken($token);
+
+                foreach($dataToken as $dl) {
+                    if($dl['stat'] == 4) {
+                        include_once 'Model/CutiModel.php';
+                        $cuti = new CutiModel();
+
+                        echo $getStat = $datanya->setStat;
+                        $getId = $datanya->setId;
+
+                        $statCuti = $cuti->setStatCuti($getStat, $getId);
+                        if($statCuti > 0) {
+                            echo '{"err" : "false", "msg" : "Pengajuan Cuti Diterima"}';
+                        } else {
+                            echo '{"err" : "true", "msg" : "Kesalahan Query Stst Cuti"}';
+                        }
+                    } else {
+                        echo '{"err" : "true", "msg" : "Anda bukan HRD"}';
+                    }
+                }
+
+            } else {
+                echo '{"err" : "true", "msg" : "Data tidak ditemukan"}';
+            }
+        }
+    }
+
+    public function Statuscuti() {
+    $data = file_get_contents('php://input');
+    $datanya = json_decode($data);
+
+    if(empty($datanya)) {
+        echo '{"err" : "true", "msg" : "Field Kosong"}';
+    } else {
+        include_once 'Model/KaryawanModel.php';
+        $karyawan = new KaryawanModel();
+
+        $token = $datanya->token;
+
+        $cekToken = $karyawan->cekDataToken($token);
+        if($cekToken > 0) {
+
+            $dataToken = $karyawan->getDataToken($token);
+
+            foreach($dataToken as $dl) {
+                if($dl['stat'] == 4) {
+                    include_once 'Model/CutiModel.php';
+                    $cuti = new CutiModel();
+
+                    $getStat = $datanya->setStat;
+
+                    $statCuti = $cuti->statusCuti($getStat);
+                    foreach($statCuti as $cutiOk) {
+                        $cutiData[] = array(
+                            'nama'=>$cutiOk['nama_kar'], 'jabatan'=>$cutiOk['stat'], 'mulaiCuti'=>$cutiOk['tgl_mulai'],
+                            'selesaiCuti'=>$cutiOk['tgl_selesai'], 'lamaCuti'=>$cutiOk['lama_cuti'], 'alasan'=>$cutiOk['alasan'],
+                            'idcuti'=>$cutiOk['id_cuti']
+                        );
+                    }
+
+                    if(empty($cutiData)) {
+                        echo '{"err" : "true", "msg" : "Data Kosong"}';
+                    } else {
+                        echo json_encode($cutiData);
+                    }
+                } else {
+                    echo '{"err" : "true", "msg" : "Anda bukan HRD"}';
+                }
+            }
+
+        } else {
+            echo '{"err" : "true", "msg" : "Data tidak ditemukan"}';
+        }
+    }
+}
+
     public function Reqcuti() {
         $data = file_get_contents('php://input');
         $datanya = json_decode($data);
@@ -81,7 +172,7 @@ class CutiCtrl {
                     $lama = $datanya->lamaCutiTxt;
                     $sekarang = date('Y-m-d h:i:s');
 
-                    $requestCuti = $cuti->inCuti($idKar,$mulai,$selesai,$lama, $ket, 1, $sekarang);
+                    $requestCuti = $cuti->inCuti($idKar,$mulai,$selesai,$lama, $ket, 3, $sekarang);
 
                     if($requestCuti > 0) {
                         echo '{"err" : "false", "msg" : "Request Cuti '.$lama.' Hari Berhasil"}';
@@ -136,6 +227,7 @@ class CutiCtrl {
                             'tglM'=>$tglM, 'blnM'=>$blnM, 'thnM'=>$thnM,
                             'tglS'=>$tglS, 'blnS'=>$blnS, 'thnS'=>$thnS,
                             'alasan'=>$dataCuti['alasan'],
+                            'stat'=>$dataCuti['status'],
                             'jmlCuti'=>$dataCuti['lama_cuti']
                             );
                     }

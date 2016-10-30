@@ -2,21 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37f20929-baf4-43a9-9769-24e5ac957e9a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Controller/CutiCtrl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Model/CutiModel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Model/KaryawanModel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Model/Koneksi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/View/Hrd/DataKaryawan.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/View/Hrd/EditKaryawan.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/View/Hrd/HeReqPass.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/View/Hrd/JadwalCutiNo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/View/Hrd/JadwalCutiYes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Modul/Angularjs/JsController/JsKaryawanCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/View/Hrd/PostSlip.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/View/Hrd/TambahKaryawan.html" />
+      <change type="DELETED" beforePath="D:\Xampp\htdocs\PsProjectEmpPayRoll\Modul\Angularjs\JsController\JsLoginCtrl.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller/CutiCtrl.php" afterPath="$PROJECT_DIR$/Controller/CutiCtrl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/CutiModel.php" afterPath="$PROJECT_DIR$/Model/CutiModel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/Karyawan/HisCuti.html" afterPath="$PROJECT_DIR$/View/Karyawan/HisCuti.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/Hrd/Hrd.html" afterPath="$PROJECT_DIR$/View/Hrd/Hrd.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Modul/Angularjs/JsController/JsCutiCtrl.js" afterPath="$PROJECT_DIR$/Modul/Angularjs/JsController/JsCutiCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Modul/Angularjs/JsController/JsLoginCtrl.js" afterPath="$PROJECT_DIR$/Modul/Angularjs/JsController/JsLoginCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/Karyawan/Karyawan.html" afterPath="$PROJECT_DIR$/View/Karyawan/Karyawan.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller/KaryawanCtrl.php" afterPath="$PROJECT_DIR$/Controller/KaryawanCtrl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/KaryawanModel.php" afterPath="$PROJECT_DIR$/Model/KaryawanModel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/Karyawan/ReqCuti.html" afterPath="$PROJECT_DIR$/View/Karyawan/ReqCuti.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/Karyawan/ReqPass.html" afterPath="$PROJECT_DIR$/View/Karyawan/ReqPass.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/Karyawan/Slip.html" afterPath="$PROJECT_DIR$/View/Karyawan/Slip.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Modul/Angularjs/angular-app.js" afterPath="$PROJECT_DIR$/Modul/Angularjs/angular-app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system.php" afterPath="$PROJECT_DIR$/system.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\Xampp\htdocs\PsProjectEmpPayRoll\View\landing.html" afterPath="$PROJECT_DIR$/View/Landing.html" />
     </list>
     <ignored path="PsProjectEmpPayRoll.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,66 +50,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Karyawan.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/View/Karyawan/Karyawan.html">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.6923075" vertical-offset="532" max-vertical-offset="1241">
-              <caret line="40" column="116" selection-start-line="40" selection-start-column="90" selection-end-line="40" selection-end-column="116" />
+            <state vertical-scroll-proportion="-15.769231" vertical-offset="32" max-vertical-offset="697">
+              <caret line="26" column="59" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReqCuti.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/View/Karyawan/ReqCuti.html">
+      <file leaf-file-name="Slip.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/View/Karyawan/Slip.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.5384614" vertical-offset="588" max-vertical-offset="2074">
-              <caret line="40" column="49" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JsCutiCtrl.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Modul/Angularjs/JsController/JsCutiCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8746736" vertical-offset="464" max-vertical-offset="1700">
-              <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CutiCtrl.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controller/CutiCtrl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.153846" vertical-offset="2020" max-vertical-offset="2669">
-              <caret line="142" column="48" selection-start-line="142" selection-start-column="48" selection-end-line="142" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HisCuti.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/View/Karyawan/HisCuti.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.807693" vertical-offset="1408" max-vertical-offset="2142">
-              <caret line="107" column="68" selection-start-line="107" selection-start-column="68" selection-end-line="107" selection-end-column="68" />
+            <state vertical-scroll-proportion="0.9390681" vertical-offset="2213" max-vertical-offset="2975">
+              <caret line="161" column="21" selection-start-line="161" selection-start-column="21" selection-end-line="161" selection-end-column="21" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CutiModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/CutiModel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="595">
-              <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
-              <folding>
-                <marker date="1477558482268" expanded="true" signature="401:506" placeholder="INSERT INTO ..." />
-                <marker date="1477558482268" expanded="true" signature="792:829" placeholder="SELECT * FRO..cutiTb..." />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -146,21 +114,32 @@
         <option value="$PROJECT_DIR$/View/ReqCuti.html" />
         <option value="$PROJECT_DIR$/View/ReqPass.html" />
         <option value="$PROJECT_DIR$/View/404.html" />
-        <option value="$PROJECT_DIR$/View/Karyawan/ReqPass.html" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/View/Karyawan/Slip.html" />
         <option value="$PROJECT_DIR$/Model/Koneksi.php" />
         <option value="$PROJECT_DIR$/View/Landing.html" />
-        <option value="$PROJECT_DIR$/Modul/Angularjs/angular-app.js" />
-        <option value="$PROJECT_DIR$/Controller/KaryawanCtrl.php" />
         <option value="$PROJECT_DIR$/Modul/Angularjs/JsController/JsLoginCtrl.js" />
-        <option value="$PROJECT_DIR$/View/Karyawan/Karyawan.html" />
-        <option value="$PROJECT_DIR$/Model/KaryawanModel.php" />
-        <option value="$PROJECT_DIR$/View/Karyawan/ReqCuti.html" />
+        <option value="$PROJECT_DIR$/View/Hrd/JadwalCuti.html" />
         <option value="$PROJECT_DIR$/Model/CutiModel.php" />
         <option value="$PROJECT_DIR$/Controller/CutiCtrl.php" />
-        <option value="$PROJECT_DIR$/View/Karyawan/HisCuti.html" />
         <option value="$PROJECT_DIR$/Modul/Angularjs/JsController/JsCutiCtrl.js" />
+        <option value="$PROJECT_DIR$/View/Karyawan/HisCuti.html" />
+        <option value="$PROJECT_DIR$/View/Karyawan/Karyawan.html" />
+        <option value="$PROJECT_DIR$/View/Karyawan/ReqCuti.html" />
+        <option value="$PROJECT_DIR$/View/Karyawan/ReqPass.html" />
+        <option value="$PROJECT_DIR$/system.php" />
+        <option value="$PROJECT_DIR$/View/Hrd/HeReqPass.html" />
+        <option value="$PROJECT_DIR$/View/Hrd/Hrd.html" />
+        <option value="$PROJECT_DIR$/View/Hrd/JadwalCutiNo.html" />
+        <option value="$PROJECT_DIR$/View/Hrd/JadwalCutiYes.html" />
+        <option value="$PROJECT_DIR$/View/Hrd/TambahKaryawan.html" />
+        <option value="$PROJECT_DIR$/View/Hrd/PostSlip.html" />
+        <option value="$PROJECT_DIR$/Modul/Angularjs/angular-app.js" />
+        <option value="$PROJECT_DIR$/View/Hrd/DataKaryawan.html" />
+        <option value="$PROJECT_DIR$/View/Hrd/EditKaryawan.html" />
+        <option value="$PROJECT_DIR$/Model/KaryawanModel.php" />
+        <option value="$PROJECT_DIR$/Modul/Angularjs/JsController/JsKaryawanCtrl.js" />
+        <option value="$PROJECT_DIR$/Controller/KaryawanCtrl.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/View/Karyawan/Slip.html" />
       </list>
     </option>
   </component>
@@ -247,6 +226,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Karyawan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PsProjectEmpPayRoll" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PsProjectEmpPayRoll" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hrd" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -392,6 +389,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Xampp\htdocs\PsProjectEmpPayRoll\View\Hrd" />
       <recent name="D:\Xampp\htdocs\PsProjectEmpPayRoll\Modul\Bootstrap\css" />
       <recent name="D:\Xampp\htdocs\PsProjectEmpPayRoll\Modul\Gambar" />
       <recent name="D:\Xampp\htdocs\PsProjectEmpPayRoll\Modul\Bootstrap" />
@@ -402,9 +400,16 @@
       <recent name="D:\Xampp\htdocs\PsProjectEmpPayRoll\Modul\Angularjs" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.PsProjectEmpPayRoll">
     <configuration default="false" name="PsProjectEmpPayRoll" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner directory="$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TambahKaryawan.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PsProjectEmpPayRoll/View/Hrd/TambahKaryawan.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -421,9 +426,6 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -433,9 +435,18 @@
       <envs />
       <method />
     </configuration>
-    <list size="1">
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="PHPUnit.PsProjectEmpPayRoll" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.TambahKaryawan.html" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.TambahKaryawan.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -484,29 +495,29 @@
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32755905" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3267974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.123298034" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32713178" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18910742" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32713178" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39932886" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39932886" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -532,58 +543,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/system.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modul/Angularjs/version.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modul/Bootstrap/js/jquery-2.1.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="3" column="20086" selection-start-line="3" selection-start-column="20086" selection-end-line="3" selection-end-column="20086" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modul/Angularjs/angular-app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="8" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modul/Angularjs/JsController/JsLoginCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/Landing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="71" column="17" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Modul/Bootstrap/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -616,7 +575,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -653,7 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -742,20 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/View/Hrd/Hrd.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="646">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="543">
-          <caret line="0" column="67" selection-start-line="0" selection-start-column="67" selection-end-line="0" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Modul/Angularjs/angular-route.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1734" max-vertical-offset="15759">
@@ -770,17 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/View/Karyawan/ReqPass.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="622" max-vertical-offset="1224">
-          <caret line="52" column="56" selection-start-line="52" selection-start-column="56" selection-end-line="52" selection-end-column="56" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Modul/Angularjs/angular-cookies.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20428336" vertical-offset="1100" max-vertical-offset="3604">
@@ -788,25 +720,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/View/Karyawan/Slip.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29259896" vertical-offset="561" max-vertical-offset="2108">
-          <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#td#1;n#tr#2;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Modul/Angularjs/angular.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="346162" max-vertical-offset="377264">
           <caret line="20370" column="9" selection-start-line="20370" selection-start-column="9" selection-end-line="20370" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -814,121 +731,232 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11971831" vertical-offset="0" max-vertical-offset="568">
           <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modul/Angularjs/angular-app.js">
+    <entry file="file://$PROJECT_DIR$/Model/CutiModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="1564">
-          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
-          <folding />
+        <state vertical-scroll-proportion="-17.076923" vertical-offset="134" max-vertical-offset="867">
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+          <folding>
+            <marker date="1477744747867" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1477744747867" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..cutiTb..." />
+            <marker date="1477744747867" expanded="true" signature="-1:-1" placeholder="UPDATE cutiT..." />
+            <marker date="1477744747867" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..cutiTb..." />
+            <marker date="1477744747867" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..cutitb..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system.php">
+    <entry file="file://$PROJECT_DIR$/View/404.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31325302" vertical-offset="73" max-vertical-offset="680">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.6153846" vertical-offset="49" max-vertical-offset="697">
-          <caret line="13" column="93" selection-start-line="13" selection-start-column="93" selection-end-line="13" selection-end-column="93" />
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
+          <caret line="0" column="67" selection-start-line="0" selection-start-column="67" selection-end-line="0" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/View/Landing.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54733217" vertical-offset="787" max-vertical-offset="1394">
-          <caret line="65" column="55" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.6385321" vertical-offset="757" max-vertical-offset="1394">
+          <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="72" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/KaryawanModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.5" vertical-offset="286" max-vertical-offset="867">
-          <caret line="39" column="57" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
-          <folding>
-            <marker date="1477552217589" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..karyawantb..." />
-            <marker date="1477552217589" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..karyawantb..." />
-            <marker date="1477552217589" expanded="true" signature="-1:-1" placeholder="SELECT id_ka..karyawantb..." />
-            <marker date="1477552217589" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..karyawantb..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/KaryawanCtrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.346153" vertical-offset="102" max-vertical-offset="1037">
-          <caret line="31" column="72" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modul/Angularjs/JsController/JsLoginCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5601318" vertical-offset="0" max-vertical-offset="1071">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/Karyawan/Karyawan.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.6923075" vertical-offset="532" max-vertical-offset="1241">
-          <caret line="40" column="116" selection-start-line="40" selection-start-column="90" selection-end-line="40" selection-end-column="116" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/CutiModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="595">
-          <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
-          <folding>
-            <marker date="1477558482268" expanded="true" signature="401:506" placeholder="INSERT INTO ..." />
-            <marker date="1477558482268" expanded="true" signature="792:829" placeholder="SELECT * FRO..cutiTb..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/Karyawan/HisCuti.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.807693" vertical-offset="1408" max-vertical-offset="2142">
-          <caret line="107" column="68" selection-start-line="107" selection-start-column="68" selection-end-line="107" selection-end-column="68" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Controller/CutiCtrl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.153846" vertical-offset="2020" max-vertical-offset="2669">
-          <caret line="142" column="48" selection-start-line="142" selection-start-column="48" selection-end-line="142" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/Karyawan/ReqCuti.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.5384614" vertical-offset="588" max-vertical-offset="2074">
-          <caret line="40" column="49" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.75268817" vertical-offset="1654" max-vertical-offset="4233">
+          <caret line="122" column="67" selection-start-line="122" selection-start-column="67" selection-end-line="122" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Modul/Angularjs/JsController/JsCutiCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8746736" vertical-offset="464" max-vertical-offset="1700">
-          <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.29109588" vertical-offset="799" max-vertical-offset="2499">
+          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Karyawan/HisCuti.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.461538" vertical-offset="755" max-vertical-offset="2295">
+          <caret line="65" column="109" selection-start-line="65" selection-start-column="109" selection-end-line="65" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Karyawan/ReqCuti.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.846153" vertical-offset="157" max-vertical-offset="2108">
+          <caret line="35" column="109" selection-start-line="35" selection-start-column="109" selection-end-line="35" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0609319" vertical-offset="0" max-vertical-offset="714">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Hrd/HeReqPass.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15963303" vertical-offset="474" max-vertical-offset="1530">
+          <caret line="33" column="119" selection-start-line="33" selection-start-column="119" selection-end-line="33" selection-end-column="119" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Hrd/Hrd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06451613" vertical-offset="525" max-vertical-offset="1496">
+          <caret line="33" column="119" selection-start-line="33" selection-start-column="119" selection-end-line="33" selection-end-column="119" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Hrd/JadwalCutiNo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4283154" vertical-offset="322" max-vertical-offset="1428">
+          <caret line="33" column="119" selection-start-line="33" selection-start-column="119" selection-end-line="33" selection-end-column="119" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Hrd/JadwalCutiYes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33512545" vertical-offset="374" max-vertical-offset="1445">
+          <caret line="33" column="119" selection-start-line="33" selection-start-column="119" selection-end-line="33" selection-end-column="119" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Hrd/PostSlip.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.615385" vertical-offset="860" max-vertical-offset="1462">
+          <caret line="76" column="45" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Hrd/TambahKaryawan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.5384614" vertical-offset="469" max-vertical-offset="2397">
+          <caret line="33" column="119" selection-start-line="0" selection-start-column="0" selection-end-line="135" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modul/Angularjs/angular-app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4760274" vertical-offset="3955" max-vertical-offset="5185">
+          <caret line="249" column="38" selection-start-line="249" selection-start-column="28" selection-end-line="249" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Hrd/DataKaryawan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.923077" vertical-offset="852" max-vertical-offset="1496">
+          <caret line="76" column="48" selection-start-line="76" selection-start-column="48" selection-end-line="76" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Hrd/EditKaryawan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.038462" vertical-offset="1829" max-vertical-offset="2397">
+          <caret line="126" column="122" selection-start-line="126" selection-start-column="122" selection-end-line="126" selection-end-column="122" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#b#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#b#1;n#form#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/KaryawanModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.038462" vertical-offset="1580" max-vertical-offset="2210">
+          <caret line="119" column="27" selection-start-line="119" selection-start-column="27" selection-end-line="119" selection-end-column="27" />
+          <folding>
+            <marker date="1477784992598" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..karyawantb..." />
+            <marker date="1477784992598" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..karyawantb..." />
+            <marker date="1477784992598" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1477784992598" expanded="true" signature="-1:-1" placeholder="UPDATE karya..." />
+            <marker date="1477784992598" expanded="true" signature="-1:-1" placeholder="SELECT id_ka..karyawantb..." />
+            <marker date="1477784992598" expanded="true" signature="-1:-1" placeholder="SELECT id_ka..karyawantb..." />
+            <marker date="1477784992598" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..karyawantb..." />
+            <marker date="1477784992598" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..karyawantb..." />
+            <marker date="1477784992598" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..karyawantb..." />
+            <marker date="1477784992598" expanded="true" signature="-1:-1" placeholder="UPDATE karya..." />
+            <marker date="1477784992598" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1477784992598" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..slipTb..." />
+            <marker date="1477784992598" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..slipTb..." />
+            <marker date="1477784992598" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..slipTb..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Karyawan/ReqPass.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6972477" vertical-offset="215" max-vertical-offset="1360">
+          <caret line="35" column="109" selection-start-line="35" selection-start-column="109" selection-end-line="35" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Karyawan/Karyawan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5" vertical-offset="435" max-vertical-offset="1275">
+          <caret line="42" column="116" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/KaryawanCtrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.576923" vertical-offset="3896" max-vertical-offset="6035">
+          <caret line="253" column="65" selection-start-line="253" selection-start-column="57" selection-end-line="253" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modul/Angularjs/JsController/JsKaryawanCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2068" max-vertical-offset="5559">
+          <caret line="145" column="32" selection-start-line="145" selection-start-column="23" selection-end-line="145" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.769231" vertical-offset="32" max-vertical-offset="697">
+          <caret line="26" column="59" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Karyawan/Slip.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9390681" vertical-offset="2213" max-vertical-offset="2975">
+          <caret line="161" column="21" selection-start-line="161" selection-start-column="21" selection-end-line="161" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

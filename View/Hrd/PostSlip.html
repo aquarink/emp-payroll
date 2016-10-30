@@ -12,7 +12,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="dropdown active">
+                <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         <span class="glyphicon glyphicon-calendar"></span> Cuti<span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -23,7 +23,7 @@
                         <li><a href="#/jadcutino"><span class="glyphicon glyphicon-thumbs-down"></span> Cuti Ditolak</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
+                <li class="dropdown active">
                     <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         <span class="glyphicon glyphicon-user"></span> Karyawan<span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -50,33 +50,31 @@
     </div>
 </nav>
 
-<div class="container" style="padding-top: 70px;" data-ng-controller="cutiController" data-ng-init="ambilStatusCuti(3)">
+<div class="container" style="padding-top: 70px;" data-ng-controller="karyawanController" data-ng-init="ambilAllUserSlip()">
     <div class="row">
+        <span ng-click="postSlip()" class="btn btn-info"><i class="glyphicon glyphicon-send"></i> Terbitkan Slip Gaji</span>
         <table class="table table-resposive">
             <tr>
+                <th>NIK</th>
                 <th>Nama</th>
                 <th>Jabatan</th>
-                <th>Mulai Cuti</th>
-                <th>Selesai Cuti</th>
-                <th>Lama Cuti</th>
-                <th>Alasan</th>
-                <th>Respon</th>
+                <th>Gaji Pokok</th>
+                <th>Tanggal Cetak</th>
+                <th>Status</th>
             </tr>
 
-            <tr ng-repeat="(key,val) in dataStatCuti track by $index">
+            <tr ng-repeat="(key,val) in allSlipKar">
+                <td>{{val.nik}}</td>
                 <td>{{val.nama}}</td>
                 <td ng-if="val.jabatan == 1">Staff</td>
                 <td ng-if="val.jabatan == 2">Supervisor</td>
                 <td ng-if="val.jabatan == 3">Manager</td>
                 <td ng-if="val.jabatan == 4">HRD</td>
-                <td>{{val.mulaiCuti}}</td>
-                <td>{{val.selesaiCuti}}</td>
-                <td>{{val.lamaCuti}} hari</td>
-                <td>{{val.alasan}}</td>
-                <td>
-                    <button class="btn btn-success" ng-click="setStatusCuti(val.idcuti,1)">Setuju</button>
-                    <button class="btn btn-warning" ng-click="setStatusCuti(val.idcuti,2)">Tolak</button>
-                </td>
+                <td>Rp.{{val.gapok}}</td>
+                <td>{{val.cetak}}</td>
+                <td ng-if="val.status == 1">Dicetak</td>
+                <td ng-if="val.status == 2">Belum Dicetak</td>
+                <td ng-if="val.status == null">Belum Dicetak</td>
             </tr>
         </table>
     </div>

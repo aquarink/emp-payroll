@@ -48,6 +48,7 @@
                         <span class="glyphicon glyphicon-calendar"></span> Cuti<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#/reqcuti"><span class="glyphicon glyphicon-bookmark"></span> Permohonan Cuti</a></li>
+                        <li role="separator" class="divider"></li>
                         <li><a href="#/hiscuti"><span class="glyphicon glyphicon-briefcase"></span> Histori Cuti</a></li>
                     </ul>
                 </li>
@@ -61,6 +62,7 @@
                         <span class="glyphicon glyphicon-cog"></span> Akun<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#/reqpass"><span class="glyphicon glyphicon-edit"></span> Ubah Password</a></li>
+                        <li role="separator" class="divider"></li>
                         <li><a href="#/out"><span class="glyphicon glyphicon-log-out"></span> Keluar</a></li>
                     </ul>
                 </li>
@@ -81,10 +83,11 @@
                             <table class="table table-condensed">
                                 <thead>
                                 <tr>
-                                    <th>Mulai Cuti</th>
-                                    <th>Selesai Cuti</th>
-                                    <th>Alasan Cuti</th>
+                                    <th>Mulai</th>
+                                    <th>Selesai</th>
+                                    <th>Alasan</th>
                                     <th>Cuti (hari)</th>
+                                    <th>Status</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -106,6 +109,12 @@
                                     <td class="agenda-events"><div class="agenda-event">{{cuti.alasan}}</div></td>
                                     <td class="agenda-date" class="active" rowspan="1">
                                         <div class="">{{cuti.jmlCuti}} <smal>hari</smal></div>
+                                    </td>
+                                    <td class="" class="active" rowspan="1">
+                                        <div class=" text-muted" ng-if="cuti.stat == 1">Terkirim</div>
+                                        <div class=" text-muted" ng-if="cuti.stat == 2">Dilihat</div>
+                                        <div class=" text-muted" ng-if="cuti.stat == 3">Disetujui</div>
+                                        <div class=" text-muted" ng-if="cuti.stat == 4">Ditolak</div>
                                     </td>
                                 </tr>
                                 </tbody>

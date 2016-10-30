@@ -27,4 +27,20 @@ class CutiModel {
         $result = $query->fetchAll();
         return $result;
     }
+
+    public function setStatCuti($stat, $id) {
+        $query = $this->panggilKoneksi->prepare("UPDATE cutiTb SET status = ? WHERE id_cuti = ?");
+        $data = array($stat, $id);
+        $query->execute($data);
+        $result = $query->rowCount();
+        return $result;
+    }
+
+    public function statusCuti($status) {
+        $query = $this->panggilKoneksi->prepare("SELECT * FROM cutitb, karyawantb WHERE cutitb.`id_kar` = karyawantb.`id_kar` AND cutitb.`status` = ?");
+        $data = array($status);
+        $query->execute($data);
+        $result = $query->fetchAll();
+        return $result;
+    }
 }

@@ -50,7 +50,7 @@
     </div>
 </nav>
 
-<div class="container" style="padding-top: 70px;" data-ng-controller="cutiController" data-ng-init="ambilStatusCuti(3)">
+<div class="container" style="padding-top: 70px;" data-ng-controller="cutiController" data-ng-init="ambilStatusCuti(1)">
     <div class="row">
         <table class="table table-resposive">
             <tr>
@@ -60,7 +60,7 @@
                 <th>Selesai Cuti</th>
                 <th>Lama Cuti</th>
                 <th>Alasan</th>
-                <th>Respon</th>
+                <th>Status</th>
             </tr>
 
             <tr ng-repeat="(key,val) in dataStatCuti track by $index">
@@ -73,10 +73,7 @@
                 <td>{{val.selesaiCuti}}</td>
                 <td>{{val.lamaCuti}} hari</td>
                 <td>{{val.alasan}}</td>
-                <td>
-                    <button class="btn btn-success" ng-click="setStatusCuti(val.idcuti,1)">Setuju</button>
-                    <button class="btn btn-warning" ng-click="setStatusCuti(val.idcuti,2)">Tolak</button>
-                </td>
+                <td><span class="btn btn-success">Disetujui</span></td>
             </tr>
         </table>
     </div>

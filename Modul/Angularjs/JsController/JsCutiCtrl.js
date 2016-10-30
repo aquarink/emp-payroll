@@ -36,6 +36,53 @@ pebs.controller('cutiController', function ($scope, $http, $location) {
             })
     }
 
+    $scope.setStatusCuti = function (id,stat) {
+        if (selfUrl == '::1') {
+            selfUrl = 'localhost';
+
+        }
+        $http.post('http://' + selfUrl + '/PsProjectEmpPayRoll/system.php?p=cuti&f=setstatuscuti', {
+            'setId': id,
+            'setStat': stat,
+            'token': localStorage.getItem('token')
+        }).
+            success(function (data) {
+                console.log(data);
+                $location.path('/hrd');
+            }).
+            error(function (data, status, header, config) {
+                console.log('D :' + data, 'S :' + status, 'H :' + header, 'C :' + config);
+                //$location.path('/admin');
+                $scope.apply();
+            })
+    }
+
+    $scope.ambilStatusCuti = function (stat) {
+        if (selfUrl == '::1') {
+            selfUrl = 'localhost';
+
+        }
+        $http.post('http://' + selfUrl + '/PsProjectEmpPayRoll/system.php?p=cuti&f=statuscuti', {
+            'setStat': stat,
+            'token': localStorage.getItem('token')
+        }).
+            success(function (data) {
+
+                if(data.err === "true") {
+                    console.log(data);
+                } else {
+                    $scope.dataStatCuti = data;
+                    console.log(data);
+                }
+
+            }).
+            error(function (data, status, header, config) {
+                console.log('D :' + data, 'S :' + status, 'H :' + header, 'C :' + config);
+                //$location.path('/admin');
+                $scope.apply();
+            })
+    }
+
     $scope.historiCuti = function () {
         if (selfUrl == '::1') {
             selfUrl = 'localhost';

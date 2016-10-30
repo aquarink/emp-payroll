@@ -12,7 +12,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="dropdown active">
+                <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         <span class="glyphicon glyphicon-calendar"></span> Cuti<span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -36,7 +36,7 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
+                <li class="dropdown active">
                     <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         <span class="glyphicon glyphicon-cog"></span> Akun<span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -50,34 +50,36 @@
     </div>
 </nav>
 
-<div class="container" style="padding-top: 70px;" data-ng-controller="cutiController" data-ng-init="ambilStatusCuti(3)">
+<div class="container" style="padding-top: 70px;" data-ng-controller="karyawanController">
     <div class="row">
-        <table class="table table-resposive">
-            <tr>
-                <th>Nama</th>
-                <th>Jabatan</th>
-                <th>Mulai Cuti</th>
-                <th>Selesai Cuti</th>
-                <th>Lama Cuti</th>
-                <th>Alasan</th>
-                <th>Respon</th>
-            </tr>
 
-            <tr ng-repeat="(key,val) in dataStatCuti track by $index">
-                <td>{{val.nama}}</td>
-                <td ng-if="val.jabatan == 1">Staff</td>
-                <td ng-if="val.jabatan == 2">Supervisor</td>
-                <td ng-if="val.jabatan == 3">Manager</td>
-                <td ng-if="val.jabatan == 4">HRD</td>
-                <td>{{val.mulaiCuti}}</td>
-                <td>{{val.selesaiCuti}}</td>
-                <td>{{val.lamaCuti}} hari</td>
-                <td>{{val.alasan}}</td>
-                <td>
-                    <button class="btn btn-success" ng-click="setStatusCuti(val.idcuti,1)">Setuju</button>
-                    <button class="btn btn-warning" ng-click="setStatusCuti(val.idcuti,2)">Tolak</button>
-                </td>
-            </tr>
-        </table>
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="text-align:center"><b>FORMULIR PERUBAHAN PASSWORD</b></div>
+                <div class="panel-body">
+                    <form name="formPass" class="form-group" action="" method="post">
+                        <label for="PasswordLama">Password Lama</label>
+                        <input ng-model="oldpass" class="form-control" type="password" id="PasswordLama" placeholder="Password Lama" required="">
+                        <hr/>
+                        <label for="PasswordBaru">Password Baru</label>
+                        <input ng-model="pass" class="form-control" type="password" id="PasswordBaru" placeholder="Password Baru" required="">
+                        <hr/>
+                        <label for="UlangiPasswordBaru">Ulangi Password Baru</label>
+                        <input ng-keyup="checkPass()" ng-model="repass" class="form-control" type="password" id="UlangiPasswordBaru" placeholder="Ulangi Password Baru" required="">
+                        <hr>
+                        <span ng-if="msg != null" style="color:red;">{{msg}}</span>
+                        <span ng-if="dResPass.err == 'false'" style="color:blue;">{{dResPass.msg}}</span>
+                        <span ng-if="dResPass.err == 'true'" style="color:red;">{{dResPass.msg}}</span>
+                        <hr/>
+                        <button class="btn btn-warning" ng-disabled="formPass.$invalid" ng-click="ubahPass()">
+                            <span class="glyphicon glyphicon-edit"></span> Update Password
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+
     </div>
 </div>
